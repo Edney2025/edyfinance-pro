@@ -30,4 +30,7 @@ function App() {
   );
 }
 
-export default App;
+export default App;// Re-deploy para atualizar a URL da API - v1.1
+import React from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+// ... resto do arquivo
