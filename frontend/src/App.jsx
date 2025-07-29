@@ -25,12 +25,9 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/meus-emprestimos" element={<ProtectedRoute><MyLoansPage /></ProtectedRoute>} />
       <Route path="/meus-documentos" element={<ProtectedRoute><DocumentsPage /></ProtectedRoute>} />
-      <Route path="/admin/dashboard" element={<AdminProtectedRoute><AdminDashboard /></AdminProtectedRoute>} />
+      <Route path="/admin/dashboard" element={<AdminProtectedRoute><AdminDashboard /></ProtectedRoute>} />
     </Routes>
   );
 }
 
-export default App;// Re-deploy para atualizar a URL da API - v1.1
-import React from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
-// ... resto do arquivo
+export default App;
