@@ -1,0 +1,21 @@
+# ------------------------------------------------------------------
+#  Teste para a proposta de renegociacao do Empréstimo ID 1
+# ------------------------------------------------------------------
+# @name renegociacaoEmprestimo1
+POST http://127.0.0.1:5000/api/proposta/renegociar/1
+Content-Type: application/json
+
+
+### ------------------------------------------------------------------
+#  Teste para a proposta de renegociacao do Empréstimo ID 3
+# ------------------------------------------------------------------
+# @name renegociacaoEmprestimo3
+POST http://127.0.0.1:5000/api/proposta/renegociar/3
+Content-Type: application/json
+
+
+### ------------------------------------------------------------------
+#  Teste de análise completa da cliente Genilsa (para comparação)
+# ------------------------------------------------------------------
+# @name analiseClienteGenilsa
+GET http://127.0.0.1:5000/api/cliente/analise/f3c47c69-ba10-4011-b58a-f42dca93e7b5
