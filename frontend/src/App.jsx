@@ -25,7 +25,12 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/meus-emprestimos" element={<ProtectedRoute><MyLoansPage /></ProtectedRoute>} />
       <Route path="/meus-documentos" element={<ProtectedRoute><DocumentsPage /></ProtectedRoute>} />
-      <Route path="/admin/dashboard" element={<AdminProtectedRoute><AdminDashboard /></ProtectedRoute>} />
+      
+      {/* LINHA CORRIGIDA ABAIXO */}
+      <Route 
+        path="/admin/dashboard" 
+        element={<AdminProtectedRoute><AdminDashboard /></AdminProtectedRoute>} 
+      />
     </Routes>
   );
 }
